@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>About</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129173632-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129173632-2');
+    </script>
+
+    <style>
+    body {
+      background-color: #122A36;
+    }
+
+    @media print {
+           body:after{
+                content:url(http://chart.googleapis.com/chart?
+                      cht=qr&chs=300x300&choe=UTF-8&chld=M&chl=Hello+world)
+                }
+    }
+    </style>
+  </head>
+  <body>
+    <header role="banner">
+      <div id="skip"><a href="#content">Skip to Main Content</a></div>
+      <div class="header-container">
+        <a  href="index.html"><img class="logo" src="images/branding.png" alt="personal logo" ></a>
+        <nav class="main-menu" role="navigation">
+          <div class="dropdown-wrapper menu-button">
+            <a class="menu-button" href="index.html">About</a>
+            <div class="drop-menu fade-in effect">
+              <a class="menu-button" href="index.html#content">Recent Works</a>
+              <a class="menu-button" href="index.html#professional">Experience</a>
+              <a class="menu-button" href="index.html#contact">Contact</a>
+            </div>
+          </div>
+          <a class="menu-button" href="gallery.html">Gallery</a>
+          <a class="menu-button" href="portfolio_01.html">Project Catcha</a>
+          <a class="menu-button" href="portfolio_02.html">IA Evaluation</a>
+        </nav>
+      </div>
+    </header>
+    <main role="main">
+      <h1 class = "headerstyle">Catcha</h1>
+      <h2 class = "subheadstyle">Your Ultimate Caffeine Tracker</h2>
+      <img src="images/catcha_mockup.png" alt="A mockup of user using Catcha">
+      <section id="content">
+        <h3 class="sectiontitle">01 SOCIAL CONTEXT</h3>
+        <h4 class="subtext">WHAT HAVE I OBSERVED</h4>
+        <h5 class = "smalltitle">Large Audience</h5>
+        <p class = "regularpara">For this project, I’m focusing on coffee drinkers, to be more specific, people who consume caffeine frequently on a daily basis. Considering coffee culture being a mainstream nowadays, this project will work to provide service for a large community.</p>
+        <h5 class = "smalltitle">Lake of Guidance</h5>
+        <p class = "regularpara">One common problem shared among the coffee drinkers is that they keep track of their caffeine intake by counting the cups of coffee they consume daily instead of the actual number of caffeine intake. This results in flaw calculation because depending on the types of coffee, the amount of caffeine various distinctly. </p>
+        <h5 class = "smalltitle">Overconsumption Is Easy</h5>
+        <p class = "regularpara">Overconsumption of caffeine is fairly easy to achieve than most people think. Although how much caffeine a person can consume on a healthy level depends on the age, weight, etc., for average, 400mg caffeine is the limit for most healthy adults, that’s two cups of Starbucks’ grande americano.</p>
+        <h5 class = "smalltitle">Consequence Is Severe</h5>
+        <p class = "regularpara">The side effects relating to overconsumption of caffeine can various from sleepless to heart attack, depending on people’s physical sensitivity to caffeine.</p>
+      </section>
+      <section>
+        <h3 class="sectiontitle">02 DESIGN PROBLEM</h3>
+        <p class = "regularpara">Users who frequently consume caffeine need to have guidance on how to control the amount of consumption because overconsumption can easily make people experience levels of body discomfort or even endangered their lives.</p>
+      </section>
+
+      <h3 class="sectiontitle">03 PERSONAS</h3>
+
+      <div class="container">
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active" tabindex="0">
+              <img src="images/personas_david_andrews.png" alt="Persona 01 David Andrews" width="460" height=auto>
+              <div class="carousel-caption">
+                <h3>David Andrews</h3>
+                <p>"Caffeine is my ultimate energy-driver"</p>
+              </div>
+            </div>
+
+            <div class="item" tabindex="0">
+              <img src="images/personas_linda_graves.png" alt="Persona 02 Linda Graves" width="460" height=auto>
+              <div class="carousel-caption">
+                <h3>Linda Graves</h3>
+                <p>"Work hard, play harder"</p>
+              </div>
+            </div>
+
+            <div class="item" tabindex="0">
+              <img src="images/personas_jill_myers.png" alt="Persona 03 Jill Myers" width="460" height=auto>
+              <div class="carousel-caption">
+                <h3>Jill Myers</h3>
+                <p>"I have a high standard for everything except for coffee drinks"</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <section>
+        <h3 class="sectiontitle">04 DESIGN PHILOSOPHY</h3>
+        <h4 class="subtext">MY ROLE AS A DESIGNER</h4>
+        <p class = "regularpara">My role as a designer is to think on the user’s end as much as possible. My design philosophy is to discover what the user needs, what they don’t need and satisfy the need to the user’s ease, getting rid of the ones that hinder the user flow. I went through the user’s daily routine and find out the easiest way to fit this habit into their life. I take responsibility to organize a robust database so that the user won’t need to take extra steps. I do think keeping track of the caffeine consumption is a crucial habit to have. In order to encourage the user to take good care of their body, we, as designers need to take the first step. By implementing the daily education feature into the app, I also intend to advocate the coffee vendors to take part in this process as well. The coffee vendors are already labeling their drinks with the number of calories. The amount of caffeine is no less important than calories in the effects to human bodies. </p>
+        <h4 class="subtext">BRAINSTORMING</h4>
+        <img src="images/brainstorming.jpg" alt="Brainstorming">
+        <h5 class = "regularpara">Eight Solutions Supported by Competitive Analysis and Design Philosophy</h5>
+
+        <h4 class="subtext">STORYBOARD</h4>
+        <img src="images/storyboard.jpg" alt="Storyboard">
+        <h5 class = "regularpara">Storyboard Developed Based on the Eight Solutions</h5>
+
+      </section>
+    </main>
+    <footer role="contentinfo">
+      &copy; 2018 by Yunqi Qian<br>
+      <a href="http://yunqiqian.com"> Yunqi Qian's Portfolio Site</a>
+    </footer>
+    <script>
+    $(document).ready(function(){
+      // Activate Carousel
+      $("#myCarousel").carousel();
+
+      // Enable Carousel Indicators
+      $(".item1").click(function(){
+        $("#myCarousel").carousel(0);
+      });
+      $(".item2").click(function(){
+        $("#myCarousel").carousel(1);
+      });
+      $(".item3").click(function(){
+        $("#myCarousel").carousel(2);
+      });
+      $(".item4").click(function(){
+        $("#myCarousel").carousel(3);
+      });
+
+      // Enable Carousel Controls
+      $(".left").click(function(){
+        $("#myCarousel").carousel("prev");
+      });
+      $(".right").click(function(){
+        $("#myCarousel").carousel("next");
+      });
+    });
+    </script>
+
+  </body>
+</html>

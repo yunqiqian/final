@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>About</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129173632-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129173632-2');
+
+      function checkForm(){
+        // Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
+        console.log("Yep, my function is being called")
+        let namefield = document.querySelector('#fname').value;
+        let emailfield = document.querySelector('#email').value;
+        let subjectfield = document.querySelector('#subject').value;
+        let nameError = document.querySelector('#nameError');
+        let emailError = document.querySelector('#emailError');
+        let subjectError = document.querySelector('#subjectError')
+
+        if (namefield.length === 0){
+          nameError.style.display = 'block';
+        }
+        else{
+          nameError.style.display = 'none';
+        }
+
+        if (emailfield.length == 0){
+          emailError.style.display = 'block';
+        }
+        else{
+          emailError.style.display = 'none';
+        }
+
+        if (sujectfield.length == 0){
+          subjectError.style.display = 'block';
+        }
+        else{
+          subjectError.style.display = 'none';
+        }
+
+        if (namefield.length === 0 || addressfield.length === 0 || subjectfield.length === 0){
+          return false;
+        }
+
+
+      }
+    </script>
+
+    <style>
+
+    .errorMsg {
+      font-family: 'Lato', sans-serif;
+      font-size: 10px;
+      color:red;
+      display: none;}
+
+    @media print {
+           body:after{
+                content:url(http://chart.googleapis.com/chart?
+                      cht=qr&chs=300x300&choe=UTF-8&chld=M&chl=Hello+world)
+                }
+    }
+    </style>
+  </head>
+  <body>
+    <header role="banner">
+      <div id="skip"><a href="#content">Skip to Main Content</a></div>
+      <div class="header-container">
+	      <a  href="index.html"><img class="logo" src="images/branding.png" alt="personal logo" ></a>
+        <nav class="main-menu" role="navigation">
+          <div class="dropdown-wrapper menu-button">
+            <a class="menu-button" href="index.html">About</a>
+            <div class="drop-menu fade-in effect">
+              <a class="menu-button" href="index.html#content">Recent Works</a>
+              <a class="menu-button" href="index.html#professional">Experience</a>
+              <a class="menu-button" href="index.html#contact">Contact</a>
+  					</div>
+  				</div>
+        	<a class="menu-button" href="gallery.html">Gallery</a>
+        	<a class="menu-button" href="portfolio_01.html">Project Catcha</a>
+        	<a class="menu-button" href="portfolio_02.html">IA Evaluation</a>
+  			</nav>
+			</div>
+    </header>
+    <main role="main">
+      <div class="heroimage">
+        <div class="herotext">
+          <h1><i class="fas fa-child" aria-label="A waving figure icon"></i>Hi! I'm Yunqi</h1>
+          <h2>UX Designer &amp; Researcher</h2>
+          <p>I'm a passionate UI/UX designer who combines the professional experience in web design and the academic background in user-centered research. </p>
+          <a href="docs/resume_yunqi_qian.pdf" class="link">Download Resume</a>
+        </div>
+      </div>
+      <div class="firstsection">
+        <h3 id="content" class="sectiontitle">01 Portfolio</h3>
+        <h4 class="subtext">My LASTEST WORK   <a href="gallery.html" class="link">  SEE MORE &gt;</a></h4>
+      </div>
+      <div class="galleryitems">
+        <div class="gallery">
+          <a href="portfolio_01.html">
+            <img src="images/gallery_01_catcha.gif" alt="Catcha Application Overview">
+          </a>
+          <h2>Catcha</h2>
+          <h3>UI/UX Design | Self-initiated Application</h3>
+        </div>
+        <div class="gallery">
+          <a href="portfolio_02.html">
+            <img src="images/gallery_02_governmentwebsite.png" alt="City of Fort Myers Logo">
+          </a>
+          <h2>Government Website Redesign</h2>
+          <h3>UI/UX Research | Website IA Consulting</h3>
+        </div>
+        <div class="gallery">
+          <a href="portfolio_03.html">
+            <img src="images/gallery_03_GLOS.png" alt="Great Lakes Observing System Logo">
+          </a>
+          <h2>Non-profit Environmental Data Portal</h2>
+          <h3>UI/UX Research | Consulting Contextual Inquiry</h3>
+        </div>
+      </div>
+
+      <h3 id="professional" class="sectiontitle">02 Professional</h3>
+      <h4 class="subtext">MY KNOWLEDGE LEVEL IN SOFTWARE</h4>
+      <pre id="typewriter">
+          Adobe XD <span class="string-highlight"> - 90% Efficiency</span>
+
+          Sketch <span class="string-highlight"> - 85% Efficiency</span>
+
+          Principle <span class="string-highlight"> - 75% Efficiency</span>
+
+          Photoshop <span class="string-highlight"> - 95% Efficiency</span>
+
+          Illustrator <span class="string-highlight"> - 85% Efficiency</span>
+
+          Javascript <span class="string-highlight"> - 75% Efficiency</span>
+
+          HTML <span class="string-highlight"> - 90% Efficiency</span>
+
+          CSS <span class="string-highlight"> - 90% Efficiency</span>
+
+          Python <span class="string-highlight"> - 80% Efficiency</span>
+
+          SQL <span class="string-highlight"> - 70% Efficiency</span>
+      </pre>
+
+      <h3 id="experience" class="sectiontitle">03 Experience</h3>
+      <div id = "accordioncontainer">
+      <button class="accordion">SMARTERTRAVEL</button>
+        <div class="panel">
+          <p class="jobtitle">Web Designer</p>
+          <p class="jobyear">2014-2016</p>
+          <p class="job_description">Initiated UI tests (A/B tests) by creating webpage wireframes and email templates using Adobe XD to drive potential traffic to the intended lander and achieve revenue purposes.</p>
+        </div>
+
+        <button class="accordion">DIEU' DONO CO.</button>
+        <div class="panel">
+          <p class="jobtitle">Chief Designer</p>
+          <p class="jobyear">2015-2017</p>
+          <p class="job_description">Reestablished brand's marketing goals with research group by refreshing branding system and website interface.</p>
+        </div>
+
+        <button class="accordion">KELPARTNERS</button>
+        <div class="panel">
+          <p class="jobtitle">Social Media Graphic Designer</p>
+          <p class="jobyear">2015-2015</p>
+          <p class="job_description">Designed graphic templates using Photoshop and Illustrator for clients' social media platforms to increase social buzz and total visiting traffic to their websites.</p>
+        </div>
+      </div>
+      <section>
+
+        <div id="contact" class="formcontainer">
+          <form method="POST" action="https://formspree.io/yuki.qian9@gmail.com" onsubmit="return checkForm();">
+            <h2>Contact</h2>
+            <p>Feel free to send me a message and connect!</p>
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <p class="errorMsg" id="nameError">Please enter your name above!</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="email">Email</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="email" name="email" placeholder="Your last name..">
+                <p class="errorMsg" id="emailError">Please enter your email!</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Subject</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                <p class="errorMsg" id="subjectError">Please enter your message!</p>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit" onsubmit="">
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer role="contentinfo">
+      &copy; 2018 by Yunqi Qian<br>
+      <a href="http://yunqiqian.com"> Yunqi Qian's Portfolio Site</a>
+    </footer>
+    <div class="callout">
+      <div class="callout-header">Welcome to my site!</div>
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+      <div class="callout-container">
+        <p>You can either scroll down to see a general description of myself or you can click on <a href="gallery.html" class="link">this link</a> to see all of the projects I worked on. Click on the "x" symbol to close the callout message.</p>
+      </div>
+    </div>
+    <script>
+    function setupTypewriter(t) {
+          var HTML = t.innerHTML;
+
+          t.innerHTML = "";
+
+          var cursorPosition = 0,
+              tag = "",
+              writingTag = false,
+              tagOpen = false,
+              typeSpeed = 150,
+            tempTypeSpeed = 0;
+
+          var type = function() {
+
+              if (writingTag === true) {
+                  tag += HTML[cursorPosition];
+              }
+
+              if (HTML[cursorPosition] === "<") {
+                  tempTypeSpeed = 0;
+                  if (tagOpen) {
+                      tagOpen = false;
+                      writingTag = true;
+                  } else {
+                      tag = "";
+                      tagOpen = true;
+                      writingTag = true;
+                      tag += HTML[cursorPosition];
+                  }
+              }
+              if (!writingTag && tagOpen) {
+                  tag.innerHTML += HTML[cursorPosition];
+              }
+              if (!writingTag && !tagOpen) {
+                  if (HTML[cursorPosition] === " ") {
+                      tempTypeSpeed = 0;
+                  }
+                  else {
+                      tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+                  }
+                  t.innerHTML += HTML[cursorPosition];
+              }
+              if (writingTag === true && HTML[cursorPosition] === ">") {
+                  tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+                  writingTag = false;
+                  if (tagOpen) {
+                      var newSpan = document.createElement("span");
+                      t.appendChild(newSpan);
+                      newSpan.innerHTML = tag;
+                      tag = newSpan.firstChild;
+                  }
+              }
+
+              cursorPosition += 1;
+              if (cursorPosition < HTML.length - 1) {
+                  setTimeout(type, tempTypeSpeed);
+              }
+
+          };
+
+          return {
+              type: type
+          };
+        }
+
+        var typer = document.getElementById('typewriter');
+
+        typewriter = setupTypewriter(typewriter);
+
+        typewriter.type();
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+    </script>
+  </body>
+</html>
