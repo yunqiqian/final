@@ -132,10 +132,16 @@ header {
     border-bottom: 1px solid #ccc;
 }
 
+.main-menu a:focus {
+      color: #122A36;
+      border-bottom-color: #122A36;
+}
+
 .main-menu a:hover {
       color: #122A36;
       border-bottom-color: #122A36;
 }
+
 
 /*====================================
   DROPDOWN MENU STYLES
@@ -162,6 +168,11 @@ header {
 }
 
 /* Makes for easy identifying when the drop menu is open */
+.dropdown-wrapper:focus > .menu-button {
+  color: #fff;
+  background: #122A36;
+}
+
 .dropdown-wrapper:hover > .menu-button {
   color: #fff;
   background: #122A36;
@@ -169,12 +180,23 @@ header {
 
 /* The dropdown-wrapper wraps both the .main-menu button and drop down menu */
 /* Expands .drop-menu to children height, not setting an expicit height allows variable # of buttons */
+
+.dropdown-wrapper:focus .drop-menu{
+  max-height: 300px;
+  opacity: 1;
+}
+
 .dropdown-wrapper:hover .drop-menu{
   max-height: 300px;
   opacity: 1;
 }
 
+
 /* The specifity keeps styles from affecting main menu button */
+.dropdown-wrapper:focus > .drop-menu .menu-button {
+  transform: translateY(0%);
+}
+
 .dropdown-wrapper:hover > .drop-menu .menu-button {
   transform: translateY(0%);
 }
@@ -339,7 +361,7 @@ header {
 
 .callout-container {
   padding: 30px;
-  background-color: #3D8DB8;
+  background-color: #1B3E52;
   color: black;
   font-size: 10px;
 }
@@ -561,6 +583,7 @@ input[type=submit]:hover {
 .carousel-inner .item h3,
 .carousel-inner .item p {
   color:#333;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /*====================================

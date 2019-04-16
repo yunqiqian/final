@@ -77,10 +77,10 @@
       <div id="skip"><a href="#content">Skip to Main Content</a></div>
       <div class="header-container">
 	      <a  href="index.html"><img class="logo" src="images/branding.png" alt="personal logo" ></a>
-        <nav class="main-menu" role="navigation">
-          <div class="dropdown-wrapper menu-button">
-            <a class="menu-button" href="index.html">About</a>
-            <div class="drop-menu fade-in effect">
+        <nav class="main-menu" role="navigation" tabindex="0">
+          <div class="dropdown-wrapper menu-button"tabindex="0">
+            <a class="menu-button" href="index.html" tabindex="0">About</a>
+            <div class="drop-menu fade-in effect" tabindex="0">
               <a class="menu-button" href="index.html#content">Recent Works</a>
               <a class="menu-button" href="index.html#professional">Experience</a>
               <a class="menu-button" href="index.html#contact">Contact</a>
@@ -98,7 +98,6 @@
           <h1><i class="fas fa-child" aria-label="A waving figure icon"></i>Hi! I'm Yunqi</h1>
           <h2>UX Designer &amp; Researcher</h2>
           <p>I'm a passionate UI/UX designer who combines the professional experience in web design and the academic background in user-centered research. </p>
-          <a href="docs/resume_yunqi_qian.pdf" class="link">Download Resume</a>
         </div>
       </div>
       <div class="firstsection">
@@ -220,7 +219,7 @@
       &copy; 2018 by Yunqi Qian<br>
       <a href="http://yunqiqian.com"> Yunqi Qian's Portfolio Site</a>
     </footer>
-    <div class="callout">
+    <div class="callout" role="main">
       <div class="callout-header">Welcome to my site!</div>
       <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
       <div class="callout-container">
