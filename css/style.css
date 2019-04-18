@@ -596,6 +596,10 @@ input[type=submit]:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+.carouselimg{
+  width:460px;
+  height:auto;
+}
 .hrefcorrection{
   color:white;
   text-decoration: underline;
